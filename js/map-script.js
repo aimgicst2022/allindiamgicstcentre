@@ -11,7 +11,7 @@ function basicmap() {
             zoom: 11,
             scrollwheel: false,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(23.694182, 90.457313), // New York
+            center: new google.maps.LatLng(22.932410, 88.734476), // New York
             // This is where you would paste any style found on Snazzy Maps.
             styles: [
     {
@@ -104,7 +104,7 @@ function basicmap() {
 
         // Let's also add a marker while we're at it
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(23.694182, 90.457313),
+            position: new google.maps.LatLng(22.932410, 88.734476),
             map: map,
             title: 'Cryptox'
         });
