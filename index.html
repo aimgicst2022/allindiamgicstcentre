@@ -46,10 +46,32 @@
     <link rel="stylesheet" href="css/responsive.css">
    
    <style>
-.alert {
-  padding: 2px;
-  background-color: #f44336;
-  color: white;
+#sticky_bar {
+    padding: 8px 5px;
+    background: rgb(255, 0, 0);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+    box-shadow: 0px 1px 11px #888888;
+    color: #fff;
+    font-family: 'Viga', sans-serif;
+    font-size: 1.1em;
+}
+#sticky_bar_text, #sticky_bar_btn {
+    display: inline-block;
+}
+#sticky_bar_btn a {
+  background:red;
+  color:#fff;
+  padding:2px 5px;
+  text-decoration:none;
+  border-radius:3px;
+}
+
+.message-bar {
+    color: rgb(0, 0, 0);
 }
 
 .closebtn {
@@ -57,18 +79,14 @@
   color: white;
   font-weight: bold;
   float: right;
-  font-size: 22px;
-  line-height: 15px;
+  font-size: 30px;
+  line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .closebtn:hover {
   color: black;
-}
-
-.para-message {
-    color: rgb(1, 4, 7);
 }
     </style>
   
@@ -77,10 +95,14 @@
 
 <body>
    
-   <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-<center><strong>Danger!</strong> Indicates a dangerous or potentially negative action.</center>
-<center><p class="para-message">Contact to your service provider!</p></center>
+<div id="sticky_bar">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <div id="sticky_bar_btn">
+        <a target="_blank" class="btn" href="#"><strong>Danger!</strong> Indicates a dangerous or potentially negative action.</a>
+    </div><br>
+    <div id="sticky_bar_text" class="message-bar">
+        <b>Contact to your service provider!</b>
+    </div>
 </div>
    
     <!--====== PRELOADER PART START ======-->
