@@ -44,11 +44,44 @@
     
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="css/responsive.css">
+   
+   <style>
+.alert {
+  padding: 2px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.para-message {
+    color: rgb(1, 4, 7);
+}
+    </style>
   
   
 </head>
 
 <body>
+   
+   <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+<center><strong>Danger!</strong> Indicates a dangerous or potentially negative action.</center>
+<center><p class="para-message">Contact to your service provider!</p></center>
+</div>
    
     <!--====== PRELOADER PART START ======-->
     
